@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		44ABC738197CD5EA00109643 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC737197CD5EA00109643 /* Foundation.framework */; };
-		44ABC73D197CD5EA00109643 /* UIImageView_AWS_S3.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44ABC73C197CD5EA00109643 /* UIImageView_AWS_S3.h */; };
-		44ABC73F197CD5EA00109643 /* UIImageView_AWS_S3.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABC73E197CD5EA00109643 /* UIImageView_AWS_S3.m */; };
 		44ABC746197CD5EA00109643 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC745197CD5EA00109643 /* XCTest.framework */; };
 		44ABC747197CD5EA00109643 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC737197CD5EA00109643 /* Foundation.framework */; };
 		44ABC749197CD5EA00109643 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC748197CD5EA00109643 /* UIKit.framework */; };
 		44ABC74C197CD5EA00109643 /* libUIImageView+AWS_S3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC734197CD5EA00109643 /* libUIImageView+AWS_S3.a */; };
 		44ABC752197CD5EA00109643 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44ABC750197CD5EA00109643 /* InfoPlist.strings */; };
-		44ABC754197CD5EA00109643 /* UIImageView_AWS_S3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABC753197CD5EA00109643 /* UIImageView_AWS_S3Tests.m */; };
+		44ABC75E197CDF4F00109643 /* UIImageView+AWS_S3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABC75D197CDF4F00109643 /* UIImageView+AWS_S3Tests.m */; };
+		44ABC764197CDFA000109643 /* UIImageView+AWS_S3.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABC762197CDF8100109643 /* UIImageView+AWS_S3.m */; };
+		AAA161ED633944369D5EFBD8 /* libPods-UIImageView+AWS_S3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 546C10431EDA438F8C24CCAE /* libPods-UIImageView+AWS_S3Tests.a */; };
+		F6643A7969E94A679E7FEE8C /* libPods-UIImageView+AWS_S3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1378BCDECB9849FCB62A7573 /* libPods-UIImageView+AWS_S3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,24 +36,27 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				44ABC73D197CD5EA00109643 /* UIImageView_AWS_S3.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1378BCDECB9849FCB62A7573 /* libPods-UIImageView+AWS_S3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIImageView+AWS_S3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ABC734197CD5EA00109643 /* libUIImageView+AWS_S3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIImageView+AWS_S3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ABC737197CD5EA00109643 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44ABC73B197CD5EA00109643 /* UIImageView+AWS_S3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AWS_S3-Prefix.pch"; sourceTree = "<group>"; };
-		44ABC73C197CD5EA00109643 /* UIImageView_AWS_S3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageView_AWS_S3.h; sourceTree = "<group>"; };
-		44ABC73E197CD5EA00109643 /* UIImageView_AWS_S3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageView_AWS_S3.m; sourceTree = "<group>"; };
 		44ABC744197CD5EA00109643 /* UIImageView+AWS_S3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIImageView+AWS_S3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ABC745197CD5EA00109643 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		44ABC748197CD5EA00109643 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		44ABC74F197CD5EA00109643 /* UIImageView+AWS_S3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIImageView+AWS_S3Tests-Info.plist"; sourceTree = "<group>"; };
 		44ABC751197CD5EA00109643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		44ABC753197CD5EA00109643 /* UIImageView_AWS_S3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageView_AWS_S3Tests.m; sourceTree = "<group>"; };
+		44ABC75D197CDF4F00109643 /* UIImageView+AWS_S3Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AWS_S3Tests.m"; sourceTree = "<group>"; };
+		44ABC761197CDF8100109643 /* UIImageView+AWS_S3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AWS_S3.h"; sourceTree = "<group>"; };
+		44ABC762197CDF8100109643 /* UIImageView+AWS_S3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AWS_S3.m"; sourceTree = "<group>"; };
+		546C10431EDA438F8C24CCAE /* libPods-UIImageView+AWS_S3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIImageView+AWS_S3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		562194FA8F4946448802946E /* Pods-UIImageView+AWS_S3Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageView+AWS_S3Tests.xcconfig"; path = "Pods/Pods-UIImageView+AWS_S3Tests.xcconfig"; sourceTree = "<group>"; };
+		B5E357C43FD54D17BD88A345 /* Pods-UIImageView+AWS_S3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageView+AWS_S3.xcconfig"; path = "Pods/Pods-UIImageView+AWS_S3.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44ABC738197CD5EA00109643 /* Foundation.framework in Frameworks */,
+				F6643A7969E94A679E7FEE8C /* libPods-UIImageView+AWS_S3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,7 @@
 				44ABC746197CD5EA00109643 /* XCTest.framework in Frameworks */,
 				44ABC749197CD5EA00109643 /* UIKit.framework in Frameworks */,
 				44ABC747197CD5EA00109643 /* Foundation.framework in Frameworks */,
+				AAA161ED633944369D5EFBD8 /* libPods-UIImageView+AWS_S3Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,8 @@
 				44ABC74D197CD5EA00109643 /* UIImageView+AWS_S3Tests */,
 				44ABC736197CD5EA00109643 /* Frameworks */,
 				44ABC735197CD5EA00109643 /* Products */,
+				B5E357C43FD54D17BD88A345 /* Pods-UIImageView+AWS_S3.xcconfig */,
+				562194FA8F4946448802946E /* Pods-UIImageView+AWS_S3Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +111,8 @@
 				44ABC737197CD5EA00109643 /* Foundation.framework */,
 				44ABC745197CD5EA00109643 /* XCTest.framework */,
 				44ABC748197CD5EA00109643 /* UIKit.framework */,
+				1378BCDECB9849FCB62A7573 /* libPods-UIImageView+AWS_S3.a */,
+				546C10431EDA438F8C24CCAE /* libPods-UIImageView+AWS_S3Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,8 +120,8 @@
 		44ABC739197CD5EA00109643 /* UIImageView+AWS_S3 */ = {
 			isa = PBXGroup;
 			children = (
-				44ABC73C197CD5EA00109643 /* UIImageView_AWS_S3.h */,
-				44ABC73E197CD5EA00109643 /* UIImageView_AWS_S3.m */,
+				44ABC761197CDF8100109643 /* UIImageView+AWS_S3.h */,
+				44ABC762197CDF8100109643 /* UIImageView+AWS_S3.m */,
 				44ABC73A197CD5EA00109643 /* Supporting Files */,
 			);
 			path = "UIImageView+AWS_S3";
@@ -128,7 +138,8 @@
 		44ABC74D197CD5EA00109643 /* UIImageView+AWS_S3Tests */ = {
 			isa = PBXGroup;
 			children = (
-				44ABC753197CD5EA00109643 /* UIImageView_AWS_S3Tests.m */,
+				44ABC75F197CDF5300109643 /* Cases */,
+				44ABC760197CDF5500109643 /* Classes */,
 				44ABC74E197CD5EA00109643 /* Supporting Files */,
 			);
 			path = "UIImageView+AWS_S3Tests";
@@ -143,6 +154,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		44ABC75F197CDF5300109643 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				44ABC75D197CDF4F00109643 /* UIImageView+AWS_S3Tests.m */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		44ABC760197CDF5500109643 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44ABC757197CD5EA00109643 /* Build configuration list for PBXNativeTarget "UIImageView+AWS_S3" */;
 			buildPhases = (
+				02C5A9C2F3814FADA62145D9 /* Check Pods Manifest.lock */,
 				44ABC730197CD5EA00109643 /* Sources */,
 				44ABC731197CD5EA00109643 /* Frameworks */,
 				44ABC732197CD5EA00109643 /* CopyFiles */,
+				0341E8001B6045DD97B01297 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44ABC75A197CD5EA00109643 /* Build configuration list for PBXNativeTarget "UIImageView+AWS_S3Tests" */;
 			buildPhases = (
+				82F13EFFEC96412EB4D1B144 /* Check Pods Manifest.lock */,
 				44ABC740197CD5EA00109643 /* Sources */,
 				44ABC741197CD5EA00109643 /* Frameworks */,
 				44ABC742197CD5EA00109643 /* Resources */,
+				E986AD8CE0DE4AE39B51504A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,12 +248,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02C5A9C2F3814FADA62145D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0341E8001B6045DD97B01297 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-UIImageView+AWS_S3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F13EFFEC96412EB4D1B144 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E986AD8CE0DE4AE39B51504A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-UIImageView+AWS_S3Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44ABC730197CD5EA00109643 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44ABC73F197CD5EA00109643 /* UIImageView_AWS_S3.m in Sources */,
+				44ABC764197CDFA000109643 /* UIImageView+AWS_S3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44ABC754197CD5EA00109643 /* UIImageView_AWS_S3Tests.m in Sources */,
+				44ABC75E197CDF4F00109643 /* UIImageView+AWS_S3Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +420,7 @@
 		};
 		44ABC758197CD5EA00109643 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E357C43FD54D17BD88A345 /* Pods-UIImageView+AWS_S3.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/UIImageView_AWS_S3.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -339,6 +433,7 @@
 		};
 		44ABC759197CD5EA00109643 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E357C43FD54D17BD88A345 /* Pods-UIImageView+AWS_S3.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/UIImageView_AWS_S3.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -351,6 +446,7 @@
 		};
 		44ABC75B197CD5EA00109643 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562194FA8F4946448802946E /* Pods-UIImageView+AWS_S3Tests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -371,6 +467,7 @@
 		};
 		44ABC75C197CD5EA00109643 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562194FA8F4946448802946E /* Pods-UIImageView+AWS_S3Tests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -404,6 +501,7 @@
 				44ABC759197CD5EA00109643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44ABC75A197CD5EA00109643 /* Build configuration list for PBXNativeTarget "UIImageView+AWS_S3Tests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +510,7 @@
 				44ABC75C197CD5EA00109643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
