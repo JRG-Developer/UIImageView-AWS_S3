@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44ABC738197CD5EA00109643 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC737197CD5EA00109643 /* Foundation.framework */; };
+		44ABC73D197CD5EA00109643 /* UIImageView_AWS_S3.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44ABC73C197CD5EA00109643 /* UIImageView_AWS_S3.h */; };
+		44ABC73F197CD5EA00109643 /* UIImageView_AWS_S3.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABC73E197CD5EA00109643 /* UIImageView_AWS_S3.m */; };
+		44ABC746197CD5EA00109643 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC745197CD5EA00109643 /* XCTest.framework */; };
+		44ABC747197CD5EA00109643 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC737197CD5EA00109643 /* Foundation.framework */; };
+		44ABC749197CD5EA00109643 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC748197CD5EA00109643 /* UIKit.framework */; };
+		44ABC74C197CD5EA00109643 /* libUIImageView+AWS_S3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ABC734197CD5EA00109643 /* libUIImageView+AWS_S3.a */; };
+		44ABC752197CD5EA00109643 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44ABC750197CD5EA00109643 /* InfoPlist.strings */; };
+		44ABC754197CD5EA00109643 /* UIImageView_AWS_S3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABC753197CD5EA00109643 /* UIImageView_AWS_S3Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44ABC74A197CD5EA00109643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44ABC72C197CD5EA00109643 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44ABC733197CD5EA00109643;
+			remoteInfo = "UIImageView+AWS_S3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44ABC732197CD5EA00109643 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				44ABC73D197CD5EA00109643 /* UIImageView_AWS_S3.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		44ABC734197CD5EA00109643 /* libUIImageView+AWS_S3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIImageView+AWS_S3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44ABC737197CD5EA00109643 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44ABC73B197CD5EA00109643 /* UIImageView+AWS_S3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AWS_S3-Prefix.pch"; sourceTree = "<group>"; };
+		44ABC73C197CD5EA00109643 /* UIImageView_AWS_S3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageView_AWS_S3.h; sourceTree = "<group>"; };
+		44ABC73E197CD5EA00109643 /* UIImageView_AWS_S3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageView_AWS_S3.m; sourceTree = "<group>"; };
+		44ABC744197CD5EA00109643 /* UIImageView+AWS_S3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIImageView+AWS_S3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44ABC745197CD5EA00109643 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		44ABC748197CD5EA00109643 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		44ABC74F197CD5EA00109643 /* UIImageView+AWS_S3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIImageView+AWS_S3Tests-Info.plist"; sourceTree = "<group>"; };
+		44ABC751197CD5EA00109643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44ABC753197CD5EA00109643 /* UIImageView_AWS_S3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageView_AWS_S3Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44ABC731197CD5EA00109643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44ABC738197CD5EA00109643 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44ABC741197CD5EA00109643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44ABC74C197CD5EA00109643 /* libUIImageView+AWS_S3.a in Frameworks */,
+				44ABC746197CD5EA00109643 /* XCTest.framework in Frameworks */,
+				44ABC749197CD5EA00109643 /* UIKit.framework in Frameworks */,
+				44ABC747197CD5EA00109643 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44ABC72B197CD5EA00109643 = {
+			isa = PBXGroup;
+			children = (
+				44ABC739197CD5EA00109643 /* UIImageView+AWS_S3 */,
+				44ABC74D197CD5EA00109643 /* UIImageView+AWS_S3Tests */,
+				44ABC736197CD5EA00109643 /* Frameworks */,
+				44ABC735197CD5EA00109643 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44ABC735197CD5EA00109643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44ABC734197CD5EA00109643 /* libUIImageView+AWS_S3.a */,
+				44ABC744197CD5EA00109643 /* UIImageView+AWS_S3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44ABC736197CD5EA00109643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44ABC737197CD5EA00109643 /* Foundation.framework */,
+				44ABC745197CD5EA00109643 /* XCTest.framework */,
+				44ABC748197CD5EA00109643 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44ABC739197CD5EA00109643 /* UIImageView+AWS_S3 */ = {
+			isa = PBXGroup;
+			children = (
+				44ABC73C197CD5EA00109643 /* UIImageView_AWS_S3.h */,
+				44ABC73E197CD5EA00109643 /* UIImageView_AWS_S3.m */,
+				44ABC73A197CD5EA00109643 /* Supporting Files */,
+			);
+			path = "UIImageView+AWS_S3";
+			sourceTree = "<group>";
+		};
+		44ABC73A197CD5EA00109643 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44ABC73B197CD5EA00109643 /* UIImageView+AWS_S3-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44ABC74D197CD5EA00109643 /* UIImageView+AWS_S3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				44ABC753197CD5EA00109643 /* UIImageView_AWS_S3Tests.m */,
+				44ABC74E197CD5EA00109643 /* Supporting Files */,
+			);
+			path = "UIImageView+AWS_S3Tests";
+			sourceTree = "<group>";
+		};
+		44ABC74E197CD5EA00109643 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44ABC74F197CD5EA00109643 /* UIImageView+AWS_S3Tests-Info.plist */,
+				44ABC750197CD5EA00109643 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44ABC733197CD5EA00109643 /* UIImageView+AWS_S3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44ABC757197CD5EA00109643 /* Build configuration list for PBXNativeTarget "UIImageView+AWS_S3" */;
+			buildPhases = (
+				44ABC730197CD5EA00109643 /* Sources */,
+				44ABC731197CD5EA00109643 /* Frameworks */,
+				44ABC732197CD5EA00109643 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIImageView+AWS_S3";
+			productName = "UIImageView+AWS_S3";
+			productReference = 44ABC734197CD5EA00109643 /* libUIImageView+AWS_S3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		44ABC743197CD5EA00109643 /* UIImageView+AWS_S3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44ABC75A197CD5EA00109643 /* Build configuration list for PBXNativeTarget "UIImageView+AWS_S3Tests" */;
+			buildPhases = (
+				44ABC740197CD5EA00109643 /* Sources */,
+				44ABC741197CD5EA00109643 /* Frameworks */,
+				44ABC742197CD5EA00109643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44ABC74B197CD5EA00109643 /* PBXTargetDependency */,
+			);
+			name = "UIImageView+AWS_S3Tests";
+			productName = "UIImageView+AWS_S3Tests";
+			productReference = 44ABC744197CD5EA00109643 /* UIImageView+AWS_S3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44ABC72C197CD5EA00109643 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 44ABC72F197CD5EA00109643 /* Build configuration list for PBXProject "UIImageView+AWS_S3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44ABC72B197CD5EA00109643;
+			productRefGroup = 44ABC735197CD5EA00109643 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44ABC733197CD5EA00109643 /* UIImageView+AWS_S3 */,
+				44ABC743197CD5EA00109643 /* UIImageView+AWS_S3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44ABC742197CD5EA00109643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44ABC752197CD5EA00109643 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44ABC730197CD5EA00109643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44ABC73F197CD5EA00109643 /* UIImageView_AWS_S3.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44ABC740197CD5EA00109643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44ABC754197CD5EA00109643 /* UIImageView_AWS_S3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44ABC74B197CD5EA00109643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44ABC733197CD5EA00109643 /* UIImageView+AWS_S3 */;
+			targetProxy = 44ABC74A197CD5EA00109643 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44ABC750197CD5EA00109643 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44ABC751197CD5EA00109643 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44ABC755197CD5EA00109643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44ABC756197CD5EA00109643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44ABC758197CD5EA00109643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/UIImageView_AWS_S3.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImageView+AWS_S3/UIImageView+AWS_S3-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44ABC759197CD5EA00109643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/UIImageView_AWS_S3.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImageView+AWS_S3/UIImageView+AWS_S3-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44ABC75B197CD5EA00109643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImageView+AWS_S3/UIImageView+AWS_S3-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UIImageView+AWS_S3Tests/UIImageView+AWS_S3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		44ABC75C197CD5EA00109643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImageView+AWS_S3/UIImageView+AWS_S3-Prefix.pch";
+				INFOPLIST_FILE = "UIImageView+AWS_S3Tests/UIImageView+AWS_S3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44ABC72F197CD5EA00109643 /* Build configuration list for PBXProject "UIImageView+AWS_S3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44ABC755197CD5EA00109643 /* Debug */,
+				44ABC756197CD5EA00109643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44ABC757197CD5EA00109643 /* Build configuration list for PBXNativeTarget "UIImageView+AWS_S3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44ABC758197CD5EA00109643 /* Debug */,
+				44ABC759197CD5EA00109643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44ABC75A197CD5EA00109643 /* Build configuration list for PBXNativeTarget "UIImageView+AWS_S3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44ABC75B197CD5EA00109643 /* Debug */,
+				44ABC75C197CD5EA00109643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44ABC72C197CD5EA00109643 /* Project object */;
+}
