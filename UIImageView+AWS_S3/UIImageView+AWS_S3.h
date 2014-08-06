@@ -61,7 +61,7 @@
  *
  *  @return The URL for the S3 image path
  */
-- (NSURL *)urlForImageWithS3Path:(NSString *)path;
++ (NSURL *)urlForImageWithS3Path:(NSString *)path;
 
 /**
  *  Uset this method to set the image using an Amazon S3 path, placeholder image, success block, and failure block.
