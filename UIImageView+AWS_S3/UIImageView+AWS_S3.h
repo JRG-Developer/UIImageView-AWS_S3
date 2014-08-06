@@ -52,7 +52,16 @@
  *
  *  @param path The path to the image relative to the `bucket` on the `amazonS3RequestSerializer`
  */
-- (void)setImageWithAmazonS3Path:(NSString *)path;
+- (void)setImageWithS3Path:(NSString *)path;
+
+/**
+ *  This method returns an URL for a given S3 image path.
+ *
+ *  @param path The S3 image path
+ *
+ *  @return The URL for the S3 image path
+ */
+- (NSURL *)urlForImageWithS3Path:(NSString *)path;
 
 /**
  *  Uset this method to set the image using an Amazon S3 path, placeholder image, success block, and failure block.
@@ -65,7 +74,7 @@
  *  @param success          The success block
  *  @param failure          The failure block
  */
-- (void)setImageWithAmazonS3Path:(NSString *)path
+- (void)setImageWithS3Path:(NSString *)path
                 placeholderImage:(UIImage *)placeholderImage
                          success:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image))success
                          failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error))failure;

@@ -23,12 +23,11 @@
 //  THE SOFTWARE.
 
 #import "UIImageView+AWS_S3.h"
+
 #import <AFNetworking/UIImageView+AFNetworking.h>
-
 #import <AFAmazonS3Client/AFAmazonS3RequestSerializer.h>
-#import <objc/runtime.h>
 
-static AFAmazonS3RequestSerializer *_amazonRequestSerializer;;
+static AFAmazonS3RequestSerializer *_amazonRequestSerializer;
 
 @implementation UIImageView (AWS_S3)
 
@@ -37,26 +36,36 @@ static AFAmazonS3RequestSerializer *_amazonRequestSerializer;;
   _amazonRequestSerializer = serializer;
 }
 
-- (void)setImageWithAmazonS3Path:(NSString *)path
+- (void)setImageWithS3Path:(NSString *)path
 {
-  [self setImageWithAmazonS3Path:path placeholderImage:nil success:nil failure:nil];
+  [self setImageWithS3Path:path placeholderImage:nil success:nil failure:nil];
 }
 
-- (void)setImageWithAmazonS3Path:(NSString *)path
+- (void)setImageWithS3Path:(NSString *)path
                 placeholderImage:(UIImage *)placeholderImage
                          success:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image))success
                          failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error))failure
 {
   NSParameterAssert(_amazonRequestSerializer);
   
-  NSString *urlString = [[_amazonRequestSerializer.endpointURL URLByAppendingPathComponent:path] absoluteString];
-  
+  NSString *urlString = [self urlStringForImageWithS3Path:path];  
   NSMutableURLRequest *request = [_amazonRequestSerializer requestWithMethod:@"GET"
                                                                    URLString:urlString
                                                                   parameters:nil
                                                                        error:nil];
   
   [self setImageWithURLRequest:request placeholderImage:placeholderImage success:success failure:failure];
+}
+
+- (NSURL *)urlForImageWithS3Path:(NSString *)path
+{
+  NSString *urlString = [self urlStringForImageWithS3Path:path];
+  return [NSURL URLWithString:urlString];
+}
+
+- (NSString *)urlStringForImageWithS3Path:(NSString *)path
+{
+  return [[_amazonRequestSerializer.endpointURL URLByAppendingPathComponent:path] absoluteString];
 }
 
 @end
